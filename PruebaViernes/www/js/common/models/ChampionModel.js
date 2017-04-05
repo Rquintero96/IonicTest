@@ -1,5 +1,5 @@
 //modelo con el que transformo lo que recibo de Riot en un champion
-angular.module('championModel',[])
+angular.module('ChampionModel',[])
 
 .factory('Champion', function(){
 	//Constructor

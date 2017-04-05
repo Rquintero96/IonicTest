@@ -43,6 +43,6 @@ angular.module('starter', ['ionic', 'ChampionsModule'])
 
   })
    // si ninguno de los estados es llamado, se usa este default
-   .otherwise('/app/home');
+   $urlRouterProvider.otherwise('/app/home');
 
 });

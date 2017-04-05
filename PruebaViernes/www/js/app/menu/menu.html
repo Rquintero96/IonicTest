@@ -1,30 +1,32 @@
-<ion-side-menu side="left">
-  	<!-- Este es el menu -->
-  		<ion-header-bar class="bar-dark">
-  		<!-- Un header para el menu-->
-  			<h1 class="title">Menu</h1>
-  		</ion-header-bar>
-  			<ion-content>
-  			<!-- Esto permite que se cree un scrollbar si se necesita -->
-	  			<ion-list>
-	  			<!-- Esta es la lista -->
-	  				<ion-item ui-sref="app.home" menu-close>Home</ion-item> <!--El ui-sref es como un href pero de angular, que llama a un estado en vez de a un url, el menu-close es para que cuando le des al item, se cierre la barra de navegacion. Ademas, si no pusieramos menu-close, no saldria la hamburguesa, sino que saldria un boton de back (si quieren saber mas, busquen la documentacion de menu-back)-->
-	  				<ion-item ui-sref="app.champions" menu-close>Search for a champion</ion-item>
-	  			</ion-list>
-  			</ion-content>
-  	</ion-side-menu>
-    <ion-side-menu-content>
-    <!-- Este es el contenido principal de la app -->
-    	<ion-nav-bar class="bar-royal">
-    	<!-- Barra de navegacion-->
-    		<ion-nav-back-button><!-- Boton para echar atras si se necesita --></ion-nav-back-button>
-    		<ion-nav-buttons side="left">
-    		<!--Botones que van a la izquierda en la barra de navegacion -->
-    			<button class="button button-icon button-clear ion-navicon" menu-toggle="left"><!-- Boton para el toggle del menu --></button>
-    		</ion-nav-buttons>
-    	</ion-nav-bar>
-    	<ion-nav-view name="content">
-    	<!--Empieza el contenido principal-->
+<ion-side-menus>
+  <ion-side-menu side="left">
+    	<!-- Este es el menu -->
+    		<ion-header-bar class="bar-dark">
+    		<!-- Un header para el menu-->
+    			<h1 class="title">Menu</h1>
+    		</ion-header-bar>
+    			<ion-content>
+    			<!-- Esto permite que se cree un scrollbar si se necesita -->
+  	  			<ion-list>
+  	  			<!-- Esta es la lista -->
+  	  				<ion-item ui-sref="app.home" menu-close>Home</ion-item> <!--El ui-sref es como un href pero de angular, que llama a un estado en vez de a un url, el menu-close es para que cuando le des al item, se cierre la barra de navegacion. Ademas, si no pusieramos menu-close, no saldria la hamburguesa, sino que saldria un boton de back (si quieren saber mas, busquen la documentacion de menu-back)-->
+  	  				<ion-item ui-sref="app.champions" menu-close>Search for a champion</ion-item>
+  	  			</ion-list>
+    			</ion-content>
+    	</ion-side-menu>
+      <ion-side-menu-content>
+      <!-- Este es el contenido principal de la app -->
+      	<ion-nav-bar class="bar-royal">
+      	<!-- Barra de navegacion-->
+      		<ion-nav-back-button><!-- Boton para echar atras si se necesita --></ion-nav-back-button>
+      		<ion-nav-buttons side="left">
+      		<!--Botones que van a la izquierda en la barra de navegacion -->
+      			<button class="button button-icon button-clear ion-navicon" menu-toggle="left"><!-- Boton para el toggle del menu --></button>
+      		</ion-nav-buttons>
+      	</ion-nav-bar>
+      	<ion-nav-view name="content">
+      	<!--Empieza el contenido principal-->
 
-    	</ion-nav-view>
-</ion-side-menu-content>
+      	</ion-nav-view>
+  </ion-side-menu-content>
+</ion-side-menus>
