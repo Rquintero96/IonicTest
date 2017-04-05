@@ -1,0 +1,8 @@
+<!--Estamos creando una vista, asi que usamos un ion-view-->
+<ion-view view-title="Champions"> <!--El view title lo pondra en la barra de navegacion-->
+	<ion-content>
+		<ion-list>
+			<ion-item ui-sref="app.champion-details" ng-repeat="champion in champions">{{champion.name}}</ion-item>
+		</ion-list>
+	</ion-content>
+</ion-view>
