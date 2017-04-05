@@ -3,10 +3,9 @@ angular.module('ChampionModel',[])
 
 .factory('Champion', function(){
 	//Constructor
-	function Champion(name, title, lore){
+	function Champion(name, title){
 		this.name = name;
 		this.title = title;
-		this.lore = lore;
 	}
 
 	//funcion para crear un champion con la data que recibo de Riot
